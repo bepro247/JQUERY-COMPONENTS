@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+  min-height: 100vh;
+  background-color: lightskyblue;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: inline-flex;
+	}
+	.header {
+		
+		align-items: center;
+    	
+		width: 100%;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	}
+
+
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+  }
+  
+
+}
+
+
+
+  .navbar_nav {
+    height: 50px;
+    background-color: #F44336;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .navbar_nav,
+  .menu_a { width: 20%; }
+  
+  .menu_li,
+  .menu_a { display: inline-block; }
+  
+  .menu_li {
+    width: 25%;
+    float: left;
+    opacity: 0.8;
+    text-align: center;
+    height: 50px;
+    background-color: #F44336;
+  }
+  
+  .menu_a { padding: 16px 0; }
+  
+  .menu_li:hover,
+  .menu_a:hover {
+    background-color: #03A9F4;
+    opacity: 1;
+  }
+  
+  #menu-acces {
+    display: none;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  
+  .menu_open:after {
+    content: "";
+    display: table;
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    #menu-acces { display: inline; padding: 10px;}
+    
+    .navbar_ul { display: none; }
+    
+    .main-nav li {
+      width: 100%;
+      position: relative;
+      opacity: 1;
+    }
+    
+    .main-nav li { height: auto; }
+    
+    }

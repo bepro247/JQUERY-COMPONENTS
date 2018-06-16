@@ -1,0 +1,114 @@
+.accordion-container {
+	margin: 2px;
+}
+.accordion-toggle {
+	position: relative;
+	display: block;
+	padding: 30px;
+	font-size:20px;
+	font-weight: 300;
+	background: rgb(245, 12, 12);
+	color: #fff;
+	text-decoration: none;
+	border: #333;
+	border-block-start-width: 20px;
+	border-block-end-color: yellow;
+}
+.accordion-toggle.open,.accordion-toggle:hover {
+	background: #333;
+}
+.accordion-toggle span.toggle-icon {
+	position: absolute;
+	top: 9px;
+	right: 20px;
+	font-size: 1.5em;
+}
+.accordion-content {
+	display: none;
+	padding: 40px;
+	overflow: auto;
+	border: black;
+}
+body {
+	width: 80%;
+	margin: 90px auto;
+	font-family: sans-serif;
+	background-image: url("../css/images/bck1.jpg") ;
+	background-size: cover;
+	background-attachment: fixed;
+	
+  }
+
+h3 {
+	text-align: center;
+	font-size: 1.65em;
+	margin: 0 0 30px;
+  }
+  
+  
+  
+  a {
+	font-size: 16px;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 0px;
+	width: calc(50% - 4px);
+	margin-right: 0px;
+  }
+  
+  a:nth-of-type(2n) {
+	margin-right: 0;
+  }
+  
+  @media screen and (min-width: 700px) {
+	a {
+	  width: calc(25% - 6px);
+	}
+	
+	a:nth-of-type(2n) {
+	  margin-right: 1px;
+	}
+	
+	a:nth-of-type(4n) {
+	  margin-right: 0;
+	}
+  }
+  
+  a:hover img {
+	transform: scale(1.15);
+  }
+  
+  figure {
+	margin: 0;
+  }
+  
+  img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	background: #ccc;
+	transition: transform .2s ease-in-out;
+  }
+  
+  .p a {
+	display: inline;
+	font-size: 13px;
+	margin: 0;
+  }
+  
+  .p {
+	text-align: center;
+	font-size: 13px;
+	padding-top: 100px;
+  }
+
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: greenyellow;
+  }
+  
+
+  
